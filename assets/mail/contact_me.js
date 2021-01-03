@@ -24,7 +24,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>Thank you, we will be in touch soon. </strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields

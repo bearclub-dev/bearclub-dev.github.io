@@ -30,12 +30,14 @@
         .carousel-control-next-icon:after {
             content: '>';
             font-size: 30px;
+            font-weight: bold;
             color: #212529;
         }
 
         .carousel-control-prev-icon:after {
             content: '<';
             font-size: 30px;
+            font-weight: bold;
             color: #212529;
         }
 
@@ -45,6 +47,7 @@
             width: 100px;
             background-image: none;
         }
+
 
         header {
             position: relative;
@@ -62,48 +65,6 @@
             width: 100%;
             overflow: hidden;
             object-fit: cover;
-        }
-
-        .typewriter h3 {
-            color: #f0ebe0;
-
-            overflow-wrap: break-word;
-            /* Ensures the content is not revealed until the animation */
-            border-right: .15em solid orange;
-            /* The typwriter cursor */
-
-            /* Keeps the content on a single line */
-            margin: 0 auto;
-            /* Gives that scrolling effect as the typing happens */
-            letter-spacing: .15em;
-            /* Adjust as needed */
-            animation:
-                typing 3.5s steps(30, end),
-                blink-caret .5s step-end infinite;
-        }
-
-        /* The typing effect */
-        @keyframes typing {
-            from {
-                width: 0
-            }
-
-            to {
-                width: 100%;
-            }
-        }
-
-        /* The typewriter cursor effect */
-        @keyframes blink-caret {
-
-            from,
-            to {
-                border-color: transparent
-            }
-
-            50% {
-                border-color: #f0ebe0
-            }
         }
 
         header video {
@@ -146,7 +107,7 @@
             }
 
             header {
-                background-image: url('./assets/img/header-bg.jpg');
+                background-image: url('./assets/img/PrettyPretty8_Moment.jpg');
             }
 
             header video {
@@ -187,9 +148,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">BearClub</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button style="outline: none;" class="navbar-toggler navbar-toggler-right" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ml-1"></i>
             </button>
@@ -198,7 +159,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#music">Music</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#media">Media</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Follow</a></li>
                 </ul>
             </div>
         </div>
@@ -282,9 +243,9 @@
                         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
                 <div class="col-lg-1 col-sm-12 mb-9" style="text-align: center;">
-                    <a class="btn btn-dark btn-social mx-2 pagesLink" href="#!"><i class="fab fa-spotify"></i></a>
-                    <a class="btn btn-dark btn-social mx-2 pagesLink" href="#!"><i class="fab fa-apple"></i></a>
-                    <a class="btn btn-dark btn-social mx-2 pagesLink" href="#!"><i class="fab fa-soundcloud"></i></a>
+                    <a class="btn btn-dark btn-social mx-2 pagesLink" target="_blank" href="https://open.spotify.com/album/7oQGwVdAAUMd89teAaftrr?si=eymx2BUrSuGKXEq6dXExUA"><i class="fab fa-spotify"></i></a>
+                    <a class="btn btn-dark btn-social mx-2 pagesLink" target="_blank" href="https://music.apple.com/ca/album/pages/1448165345?fbclid=IwAR1LKSRZlm84_DvN9A9FgEzXXpRXfY4gPrfS5X7vTsRaBfaaErJZtx3sVfo" ><i class="fab fa-apple"></i></a>
+                    <a class="btn btn-dark btn-social mx-2 pagesLink" target="_blank" href="https://soundcloud.com/taalib-bhatti?ref=clipboard&p=i&c=1&fbclid=IwAR3aFHDdQFpdRcJdEpzuIeTlto4EVISP32Shi-R7-ELfOAvDEJUhte_QU44"><i class="fab fa-soundcloud"></i></a>
                 </div>
             </div>
         </div>
@@ -382,7 +343,7 @@
             </div>
             <div id="mediaSlider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item" style="text-align: center;">
+                    <div class="carousel-item active" style="text-align: center;">
                         <img src="assets/img/Amy-007.JPG" style="height: 50vh; width: auto;" alt="">
                     </div>
                     <div class="carousel-item" style="text-align: center;">
@@ -424,8 +385,13 @@
                     <div class="carousel-item" style="text-align: center;">
                         <img src="assets/img/COver-4-4-4.png" style="height: 50vh; width: auto;" alt="">
                     </div>
-                    <div class="carousel-item active" style="text-align: center;">
+                    <div class="carousel-item" style="text-align: center;">
                         <img src="assets/img/COver-4-4.png" style="height: 50vh; width: auto;" alt="">
+                    </div>
+                    <div class="carousel-item" style="text-align: center;">
+                        <video controls playsinline='playsinline' style="height: 40vh; width: auto;">
+                            <source type="video/mp4" src="vid/PrettyPretty8.mp4">
+                        </video>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#mediaSlider" role="button" data-slide="prev">
@@ -446,57 +412,55 @@
     <section class="page-section" id="contact">
         <div class="container">
             <div class="text-center">
-                <h2 class="section-heading text-uppercase" style="padding-bottom: 2vh;">Contact Us</h2>
+                <h2 class="section-heading text-uppercase" style="padding-bottom: 3vh;">Follow us</h2>
             </div>
-            <form id="contactForm" action="https://formspree.io/f/xnqogylp" method="POST" novalidate="novalidate">
-                <div class="row align-items-stretch mb-5">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <input class="form-control" id="name" name="name" type="text" placeholder="Your Name *"
-                                required="required" data-validation-required-message="Please enter your name." />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="Your Email *"
-                                required="required"
-                                data-validation-required-message="Please enter your email address." />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="form-group mb-md-0">
-                            <input class="form-control" id="phone" name='phone' type="tel" placeholder="Your Phone *"
-                                required="required"
-                                data-validation-required-message="Please enter your phone number." />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group form-group-textarea mb-md-0">
-                            <textarea class="form-control" id="message" name='message' placeholder="Your Message *"
-                                required="required"
-                                data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
+
+            <div class="row align-items-center text-center">
+                <div class="col-lg-3 col-sm-6">
+                    <a class="btn btn-dark btn-xl btn-social" style="margin: 12px;" target="_blank" 
+                        href="https://open.spotify.com/artist/5bFN5MQx85wSPsdBjppdlx?si=mOQlrVXkQ86Oromlfon6tg"><i
+                            class="fab fa-spotify"></i></a>
                 </div>
-                <div class="text-center">
-                    <div id="success"></div>
-                    <button class="btn btn-xl text-uppercase" type="submit"
-                        style="background-color: #212529; color: #f0ebe0;">Submit</button>
+                <div class="col-lg-3 col-sm-6">
+                    <a class="btn btn-dark btn-social mx-2" style="margin:12px" target="_blank" 
+                        href="https://music.apple.com/ca/artist/bearclub/1447914906?fbclid=IwAR0gQ1cP27S8EKUbEdYHGheaJJffsSKIo_DXRMqdJv4Gtt0Md2mGWXaRPkk"><i
+                            class="fab fa-apple"></i></a>
                 </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a class="btn btn-dark btn-social mx-2" style="margin: 12px;" target="_blank" 
+                        href="https://soundcloud.com/taalib-bhatti?ref=clipboard&p=i&c=1&fbclid=IwAR3aFHDdQFpdRcJdEpzuIeTlto4EVISP32Shi-R7-ELfOAvDEJUhte_QU44"><i
+                            class="fab fa-soundcloud"></i></a>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <a class="btn btn-dark btn-social mx-2" style="margin: 12px" target="_blank" 
+                        href="https://www.instagram.com/bearclub_/?fbclid=IwAR0gTbxWasF1oZ94f5-8Xhy-SmQg9ZpusiRxsVTyszmcfLgUfjiwq3nBSro"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <br />
+
+            <form id="contactForm" style="display: flex; flex-direction: row; padding: 2px;"
+                action="https://formspree.io/f/xnqogylp" method="POST" novalidate="novalidate">
+                <div class="form-group" style="flex-grow: 2; height: 50px;">
+                    <input class="form-control" id="email" name="email" type="email"
+                        placeholder="Your Email *" required="required"
+                        data-validation-required-message="Please enter your email address." />
+                    <p class="help-block text-danger"></p>
+                </div>
+                <button class="btn btn-lg text-uppercase" type="submit"
+                    style="background-color: #212529; color:  #e1ad01; letter-spacing: 0.05ch; font-size: 18px;  height: 66px;">Subscribe</button>
             </form>
+            <div id="success"></div>
         </div>
     </section>
     <!-- Footer-->
     <footer class="footer py-4" style="background-color: #212529;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-left" style="color: #f0ebe0;">Copyright © BearClub 2020</div>
+                <div class="col-lg-4 text-lg-left" style="color: #e1ad01;">Copyright © BearClub 2020</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2"
-                        href="https://open.spotify.com/album/7oQGwVdAAUMd89teAaftrr?si=kOePfeymQs--KhWllWK1Qg"><i
-                            class="fab fa-spotify"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-apple"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-soundcloud"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" target="_blank" href="tel:7788898542"><i class="fas fa-phone"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="mailto:taalibbhatti@gmail.com" target="_blank" ><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
